@@ -1,0 +1,40 @@
+{
+  "name": "zoomit",
+  "version": "0.1.0",
+  "description": "Entre más cerca mejor. Haz que tus usuarios vean con detalle la grandeza de tus servicios o productos haciendo zoom sobre ellos de la forma más fácil.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdGraVill/zoomIt.git"
+  },
+  "keywords": [
+    "zoom",
+    "fullscreen",
+    "image",
+    "img",
+    "simple",
+    "automatic"
+  ],
+  "author": "Eduardo Grajales",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/EdGraVill/zoomIt/issues"
+  },
+  "homepage": "https://github.com/EdGraVill/zoomIt#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.8.8",
+    "gulp-remember": "^0.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
