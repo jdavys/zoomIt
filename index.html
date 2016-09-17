@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>zoomIt by EdGraVill</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/EdGraVill/zoomIt">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/EdGraVill/zoomIt/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/EdGraVill/zoomIt/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>zoomIt</h1>
+          <p>Entre más cerca mejor. Haz que tus usuarios vean con detalle la grandeza de tus servicios o productos haciendo zoom sobre ellos de la forma más fácil.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/EdGraVill">EdGraVill</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><img src="https://cloud.githubusercontent.com/assets/16921957/18571719/3f9fc41a-7b7a-11e6-9c88-b034bf24d43a.png" alt="zoomit"></p>
+
+<p>Entre más cerca mejor. Haz que tus usuarios vean con detalle la grandeza de tus servicios o productos haciendo zoom sobre ellos de la forma más fácil.</p>
+
+<h2>
+<a id="uso" class="anchor" href="#uso" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Uso</h2>
+
+<p>La implementación de zoomIt trata de ser lo más sencilla posible para evitar código extra o alargamiento inecesario en el peso de los archivos.</p>
+
+<p>Lo único que se debe hacer, es agregar el atributo <strong>zoomit</strong> dentro de la etiqueta del objeto sobre el que deseas hacer zoom.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>    &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>myimage.png<span class="pl-pds">"</span></span> <span class="pl-e">zoomit</span>&gt;
+
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>galyrian<span class="pl-pds">"</span></span> <span class="pl-e">zoomit</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+
+    &lt;<span class="pl-ent">figure</span> <span class="pl-e">zoomit</span>&gt;&lt;/<span class="pl-ent">figure</span>&gt;</pre></div>
+
+<h2>
+<a id="descarga" class="anchor" href="#descarga" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Descarga</h2>
+
+<h3>
+<a id="versión-de-producción" class="anchor" href="#versi%C3%B3n-de-producci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Versión de Producción</h3>
+
+<p>Si lo que buscas es simplemente utilizar zoomIt en tu proyecto, la versión de Producción es la indicada.</p>
+
+<p>Tan sólo descárgala desde <a href="https://raw.githubusercontent.com/EdGraVill/zoomIt/master/zoomIt/production/zoomIt-prod-0.3.0.min.js">aquí</a>.
+O en el repositorio de este proyecto, siguiendo la ruta: <code>./zoomIt/production/</code></p>
+
+<p><a href="https://raw.githubusercontent.com/EdGraVill/zoomIt/master/zoomIt/production/zoomIt-prod-0.3.0.min.js">zoomIt-prod-0.3.0.js</a></p>
+
+<h3>
+<a id="versión-de-desarrollo" class="anchor" href="#versi%C3%B3n-de-desarrollo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Versión de Desarrollo</h3>
+
+<p>Si buscas 'tunear' y/o ayudar a mejorar zoomIt, te invitamos a descargar la versión de desarrollo.</p>
+
+<p>Tan sólo descárgala desde <a href="https://raw.githubusercontent.com/EdGraVill/zoomIt/master/zoomIt/development/zoomIt-dev-0.3.0.js">aquí</a>.
+O en el repositorio de este proyecto, siguiendo la ruta: <code>./zoomIt/development/</code></p>
+
+<p><a href="https://raw.githubusercontent.com/EdGraVill/zoomIt/master/zoomIt/development/zoomIt-dev-0.3.0.js">zoomIt-dev-0.3.0.js</a></p>
+
+<h2>
+<a id="instalación" class="anchor" href="#instalaci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalación</h2>
+
+<h3>
+<a id="jquery" class="anchor" href="#jquery" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>jQuery</h3>
+
+<p>Lo primero a tomar en cuenta, es la dependencia de zoomIt de la librería jQuery</p>
+
+<p>Por lo que si en tu proyecto no utilizas jQuery puedes utilizarlo de dos maneras:</p>
+
+<ul>
+<li>Descargar el archivo
+Y seguir las instrucciones del siguiente <a href="https://jquery.com/download/">enlace</a>.</li>
+<li>Utilizar un CDN
+Tan sólo pegando el siguiente código justo antes del cierre de la etiqueta HEAD:</li>
+</ul>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">head</span>&gt;
+    ...
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">head</span>&gt;</pre></div>
+
+<h3>
+<a id="zoomit" class="anchor" href="#zoomit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>zoomIt</h3>
+
+<p>Una vez implementado jQuery en nuestro proyecto, es momento de implementar el código de zoomIt, el cual hace toda la magia.</p>
+
+<p>Para hacerlo, hay que descargar el archivo de producción y guardarlo el directorio de nuestro proyecto. (Recomendamos ampliamente crear una carpeta en el root llamada 'js' y guardar zoomIt.js allí).</p>
+
+<p>Posteriormente agregar una etiqueta <code>&lt;script&gt;</code> llamando a zoomIt justo antes de terminar la etiqueta BODY:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
+    ...
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>./js/zoomIt-prod-0.3.0.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+
+<h2>
+<a id="en-futuras-versiones" class="anchor" href="#en-futuras-versiones" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>En Futuras Versiones</h2>
+
+<ul>
+<li>Hacer zoom en cualquier elemento del DOM (con Domvas)</li>
+<li>Añadir la funcionalidad para aumentar el zoom en dispositivoso móviles con el gesto del pellizco.</li>
+<li>Buscar si existen imágenes con resoluciones más altas y mostrarlas en la vista de pantalla completa.</li>
+<li>Soporte para max-width, min-width, max-height y min-height.</li>
+</ul>
+
+<h2>
+<a id="licencia" class="anchor" href="#licencia" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licencia</h2>
+
+<p>Desarrollado por Eduardo Grajales <a href="https://github.com/EdGraVill">@EdGraVill</a> bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
