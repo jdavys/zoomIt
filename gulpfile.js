@@ -9,12 +9,12 @@ autoprefixer = require('gulp-autoprefixer'),
 stylus = require('gulp-stylus'),
 cache = require('gulp-cached'),
 remember = require('gulp-remember'),
-version = '0.1.0',
+version = '0.3.0',
 paths = {
 	css: {
 		src: './src/css/main.styl',
 		watch: './src/css/**/*.styl',
-		dest: './demo/css/'
+		dest: './docs/css/'
 	},
 	js: {
 		src: './src/js/*.js',
@@ -22,13 +22,13 @@ paths = {
 		dest: {
 			dev: './zoomIt/development',
 			prod: './zoomIt/production/',
-			demo: './demo/js'
+			docs: './docs/js'
 		}
 	}
 };
 
 gulp.task('server', function () {
-	return gulp.src('./demo')
+	return gulp.src('./docs')
 		.pipe(server({
 			host: '0.0.0.0',
 			port: '80',
@@ -54,18 +54,19 @@ gulp.task('build:css', function () {
 gulp.task('build:js', function () {
 	return gulp.src(paths.js.src)
 		.pipe(cache('build:js'))
-		.pipe(header('/*! */'))
+		.pipe(header('/*! zoomIt - v' + version + ' - 2016-09-16\n * \n * Copyright (c) 2016 Eduardo Grajales @EdGraVill\n * Licencia GPL 3.0. Para más información visite: https://www.gnu.org/licenses/gpl-3.0.html\n *\n * https://github.com/EdGraVill/zoomIt\n *\n */\n\n'))
 		.pipe(remember('build:js'))
 		.pipe(concat('zoomIt-dev-' + version + '.js'))
 		.pipe(gulp.dest(paths.js.dest.dev))
 		.pipe(uglify())
+		.pipe(header('/*! zoomIt - v' + version + ' - 2016-09-16\n * \n * Copyright (c) 2016 Eduardo Grajales @EdGraVill\n * Licencia GPL 3.0. Para más información visite: https://www.gnu.org/licenses/gpl-3.0.html\n *\n * https://github.com/EdGraVill/zoomIt\n *\n */\n\n'))
 		.pipe(rename({
 			prefix: 'zoomIt-',
 			basename: 'prod-' + version,
 			suffix: '.min'
 		}))
 		.pipe(gulp.dest(paths.js.dest.prod))
-		.pipe(gulp.dest(paths.js.dest.demo));
+		.pipe(gulp.dest(paths.js.dest.docs));
 });
 
 gulp.task('watch', function () {

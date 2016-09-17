@@ -1,10 +1,10 @@
 {
   "name": "zoomit",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Entre más cerca mejor. Haz que tus usuarios vean con detalle la grandeza de tus servicios o productos haciendo zoom sobre ellos de la forma más fácil.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp"
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",

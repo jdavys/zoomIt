@@ -1,3 +1,12 @@
+/*! zoomIt - v0.3.0 - 2016-09-16
+ * 
+ * Copyright (c) 2016 Eduardo Grajales @EdGraVill
+ * Licencia GPL 3.0. Para más información visite: https://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * https://github.com/EdGraVill/zoomIt
+ *
+ */
+
 /* Función que detecta todos los elementos del body que tengan el atributo 'zoomit', luego los cambia por la siguiente estructura:
 *************************************************************************************************
 *																								*
